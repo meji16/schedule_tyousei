@@ -8,6 +8,7 @@
 
 
 //記念すべき第一回目のコミットいただきます　by kaito
+//２回目のコミット　from　xcode　by yato
 
 import UIKit
 
