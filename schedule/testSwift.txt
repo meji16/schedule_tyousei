@@ -6,6 +6,9 @@
 //  Copyright (c) 2015年 矢戸知子. All rights reserved.
 //
 
+
+//記念すべき第一回目のコミットいただきます　by kaito
+
 import UIKit
 
 class FirstViewController: UIViewController {
