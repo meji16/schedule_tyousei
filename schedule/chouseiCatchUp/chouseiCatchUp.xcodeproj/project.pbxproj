@@ -409,6 +409,7 @@
 				2CA9809D1BF7EA5C006E3F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CA9809E1BF7EA5C006E3F18 /* Build configuration list for PBXNativeTarget "chouseiCatchUpTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +418,7 @@
 				2CA980A01BF7EA5C006E3F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
