@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		2C7818351C02274E0012771D /* newAccountInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7818341C02274E0012771D /* newAccountInputViewController.swift */; };
 		2CA980821BF7EA5C006E3F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA980811BF7EA5C006E3F18 /* AppDelegate.swift */; };
-		2CA980841BF7EA5C006E3F18 /* topViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA980831BF7EA5C006E3F18 /* topViewController.swift */; };
+		2CA980841BF7EA5C006E3F18 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA980831BF7EA5C006E3F18 /* TopViewController.swift */; };
 		2CA980871BF7EA5C006E3F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA980851BF7EA5C006E3F18 /* Main.storyboard */; };
 		2CA980891BF7EA5C006E3F18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA980881BF7EA5C006E3F18 /* Images.xcassets */; };
 		2CA9808C1BF7EA5C006E3F18 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA9808A1BF7EA5C006E3F18 /* LaunchScreen.xib */; };
-		2CA980981BF7EA5C006E3F18 /* chouseiCatchUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA980971BF7EA5C006E3F18 /* chouseiCatchUpTests.swift */; };
+		2CA980981BF7EA5C006E3F18 /* ChouseiCatchUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA980971BF7EA5C006E3F18 /* ChouseiCatchUpTests.swift */; };
+		2CD957EE1C02F2DD003C9E28 /* newAccountConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD957ED1C02F2DD003C9E28 /* newAccountConfirmViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +32,14 @@
 		2CA9807C1BF7EA5C006E3F18 /* chouseiCatchUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chouseiCatchUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA980801BF7EA5C006E3F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CA980811BF7EA5C006E3F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CA980831BF7EA5C006E3F18 /* topViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topViewController.swift; sourceTree = "<group>"; };
+		2CA980831BF7EA5C006E3F18 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		2CA980861BF7EA5C006E3F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CA980881BF7EA5C006E3F18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2CA9808B1BF7EA5C006E3F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2CA980911BF7EA5C006E3F18 /* chouseiCatchUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chouseiCatchUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA980961BF7EA5C006E3F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2CA980971BF7EA5C006E3F18 /* chouseiCatchUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chouseiCatchUpTests.swift; sourceTree = "<group>"; };
+		2CA980971BF7EA5C006E3F18 /* ChouseiCatchUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChouseiCatchUpTests.swift; sourceTree = "<group>"; };
+		2CD957ED1C02F2DD003C9E28 /* newAccountConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newAccountConfirmViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				2CA980811BF7EA5C006E3F18 /* AppDelegate.swift */,
-				2CA980831BF7EA5C006E3F18 /* topViewController.swift */,
+				2CA980831BF7EA5C006E3F18 /* TopViewController.swift */,
 				2CA980851BF7EA5C006E3F18 /* Main.storyboard */,
 				2CA980881BF7EA5C006E3F18 /* Images.xcassets */,
 				2CA9808A1BF7EA5C006E3F18 /* LaunchScreen.xib */,
 				2CA9807F1BF7EA5C006E3F18 /* Supporting Files */,
 				2C7818341C02274E0012771D /* newAccountInputViewController.swift */,
+				2CD957ED1C02F2DD003C9E28 /* newAccountConfirmViewController.swift */,
 			);
 			path = chouseiCatchUp;
 			sourceTree = "<group>";
@@ -101,7 +104,7 @@
 		2CA980941BF7EA5C006E3F18 /* chouseiCatchUpTests */ = {
 			isa = PBXGroup;
 			children = (
-				2CA980971BF7EA5C006E3F18 /* chouseiCatchUpTests.swift */,
+				2CA980971BF7EA5C006E3F18 /* ChouseiCatchUpTests.swift */,
 				2CA980951BF7EA5C006E3F18 /* Supporting Files */,
 			);
 			path = chouseiCatchUpTests;
@@ -215,7 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CA980841BF7EA5C006E3F18 /* topViewController.swift in Sources */,
+				2CD957EE1C02F2DD003C9E28 /* newAccountConfirmViewController.swift in Sources */,
+				2CA980841BF7EA5C006E3F18 /* TopViewController.swift in Sources */,
 				2CA980821BF7EA5C006E3F18 /* AppDelegate.swift in Sources */,
 				2C7818351C02274E0012771D /* newAccountInputViewController.swift in Sources */,
 			);
@@ -225,7 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CA980981BF7EA5C006E3F18 /* chouseiCatchUpTests.swift in Sources */,
+				2CA980981BF7EA5C006E3F18 /* ChouseiCatchUpTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

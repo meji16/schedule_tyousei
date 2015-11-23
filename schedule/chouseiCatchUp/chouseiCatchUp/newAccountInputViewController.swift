@@ -46,6 +46,9 @@ class newAccountInputViewController: UIViewController {
         var password:String = passwordTextField.text
         resetErrMessage()
         inputErrStatus = inputErrCheck(userName, phoneNumber: phoneNumber, password: password)
+        if inputErrStatus == 0{
+
+        }
     }
   
     
