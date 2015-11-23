@@ -64,6 +64,10 @@ class newAccountInputViewController: UIViewController {
             labelPhoneNumberErrMessage.text = "電話番号が入力されていません"
         inputErrStatus = 10
         }
+        if phoneNumber.toInt() == nil{
+            labelPhoneNumberErrMessage.text = "数字以外の入力があります"
+            inputErrStatus = 10
+        }
         if password == ""{
         inputErrStatus = 10
             labelPasswordErrMessage.text = "パスワードが入力されていません"
