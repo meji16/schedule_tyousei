@@ -12,17 +12,21 @@ class newAccountInputViewController: UIViewController {
 
    
     
-    @IBOutlet weak var userName: UITextField!
-    @IBOutlet weak var phoneNumber: UITextField!
-    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var buttonShowPassword: UIButton!
-    
     @IBOutlet weak var labelUserNameErrMessage: UILabel!
     @IBOutlet weak var labelPhoneNumberErrMessage: UILabel!
     @IBOutlet weak var labelPasswordErrMessage: UILabel!
+    /*入力内容の判定
+    0:正常　10:入力内容に不備あり
+    */
+    var inputErrStatus:Int8 = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        password.secureTextEntry = true
+        passwordTextField.secureTextEntry = true
         resetErrMessage()
     }
 
@@ -36,15 +40,42 @@ class newAccountInputViewController: UIViewController {
         labelPasswordErrMessage.text = ""
     }
     
-    //func inputErrCheck(userName:String, phoneNumber:Int8, passWord:String)->Int8{
-      //      if
+    @IBAction func buttonGoConfirm(sender: AnyObject) {
+        var userName:String = userNameTextField.text
+        var phoneNumber:String = phoneNumberTextField.text
+        var password:String = passwordTextField.text
+        resetErrMessage()
+        inputErrStatus = inputErrCheck(userName, phoneNumber: phoneNumber, password: password)
+    }
+  
     
-    //}
+    
+    func inputErrCheck(userName:String, phoneNumber:String, password:String)->Int8{
+        
+      if userName == ""{
+        inputErrStatus = 10
+        labelUserNameErrMessage.text = "ユーザー名が入力されていません"
+        }/*try{
+            Int8(phoneNumber)
+        }catch{
+           labelPhoneNumberErrMessage.text = "不正な値が入力されています"
+        }*/
+        if phoneNumber == "" {
+            labelPhoneNumberErrMessage.text = "電話番号が入力されていません"
+        inputErrStatus = 10
+        }
+        if password == ""{
+        inputErrStatus = 10
+            labelPasswordErrMessage.text = "パスワードが入力されていません"
+        }
+        return inputErrStatus
+        
+     }
 
 
     @IBAction func showPassword(sender: AnyObject) {
-        if password.secureTextEntry == true{
-        password.secureTextEntry = false
+        if passwordTextField.secureTextEntry == true{
+        passwordTextField.secureTextEntry = false
             //buttonShowPassword.setTitle("パスワードを隠す", forState: .Normal)
         }
         

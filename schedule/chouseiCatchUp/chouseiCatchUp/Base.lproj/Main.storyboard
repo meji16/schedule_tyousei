@@ -96,11 +96,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hRh-4h-SIR">
-                                <rect key="frame" x="207" y="254" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="パスワード" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxJ-cH-2GH">
                                 <rect key="frame" x="207" y="312" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -108,7 +103,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OE1-8t-RVZ">
-                                <rect key="frame" x="197" y="341" width="97" height="30"/>
+                                <rect key="frame" x="202" y="341" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -118,6 +113,9 @@
                                 <state key="normal" title="次へ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonGoConfirm:" destination="ONU-Cv-xwz" eventType="touchUpInside" id="WRq-V9-0uR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiJ-uL-ri0">
                                 <rect key="frame" x="207" y="514" width="76" height="30"/>
@@ -128,25 +126,25 @@
                                     <segue destination="vXZ-lx-hvc" kind="show" id="a54-qd-xUE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userNameErrorMessage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hs-m6-mkD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="userNameErrorMessage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hs-m6-mkD">
                                 <rect key="frame" x="197" y="196" width="185" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.91712042297979801" green="0.095233118279454659" blue="0.023053310853725778" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="phoneNumberErrorMessage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hg1-jZ-VNA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="phoneNumberErrorMessage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hg1-jZ-VNA">
                                 <rect key="frame" x="207" y="289" width="217" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.91712042299999996" green="0.1024626929" blue="0.1096289666" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="passwordErrorMessage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmv-W8-du4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="passwordErrorMessage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmv-W8-du4">
                                 <rect key="frame" x="202" y="396" width="182" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.91712042299999996" green="0.1024626929" blue="0.1096289666" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSG-Kq-H0r">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSG-Kq-H0r">
                                 <rect key="frame" x="218" y="370" width="120" height="30"/>
                                 <state key="normal" title="パスワードを表示">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -155,14 +153,23 @@
                                     <action selector="showPassword:" destination="ONU-Cv-xwz" eventType="touchUpInside" id="hvi-2E-cwp"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hRh-4h-SIR">
+                                <rect key="frame" x="207" y="254" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="zyi-VW-7nZ" secondAttribute="centerX" id="32p-i7-OCo"/>
                             <constraint firstAttribute="centerX" secondItem="xih-O4-7ef" secondAttribute="centerX" id="9w5-Yl-kPt"/>
+                            <constraint firstAttribute="centerX" secondItem="kmv-W8-du4" secondAttribute="centerX" id="BZP-1W-JID"/>
+                            <constraint firstAttribute="centerX" secondItem="xSG-Kq-H0r" secondAttribute="centerX" id="I8n-pF-hJl"/>
+                            <constraint firstAttribute="centerX" secondItem="hg1-jZ-VNA" secondAttribute="centerX" id="RgD-dx-25b"/>
                             <constraint firstAttribute="centerX" secondItem="Mqw-WS-Q8T" secondAttribute="centerX" id="YXV-Z2-jYJ"/>
                             <constraint firstAttribute="centerX" secondItem="OE1-8t-RVZ" secondAttribute="centerX" id="gMQ-ae-vBQ"/>
                             <constraint firstAttribute="centerX" secondItem="vxJ-cH-2GH" secondAttribute="centerX" id="jID-cc-XCc"/>
+                            <constraint firstAttribute="centerX" secondItem="3hs-m6-mkD" secondAttribute="centerX" id="o4A-Hf-lGG"/>
                             <constraint firstAttribute="centerX" secondItem="OiJ-uL-ri0" secondAttribute="centerX" id="sUV-En-0o1"/>
                             <constraint firstAttribute="centerX" secondItem="hRh-4h-SIR" secondAttribute="centerX" id="v8D-O4-qgu"/>
                             <constraint firstAttribute="centerX" secondItem="JEr-IZ-fiZ" secondAttribute="centerX" id="wAE-uL-3RG"/>
@@ -173,7 +180,9 @@
                         <outlet property="labelPasswordErrMessage" destination="kmv-W8-du4" id="hhF-UA-Qoe"/>
                         <outlet property="labelPhoneNumberErrMessage" destination="hg1-jZ-VNA" id="oSa-rM-TXw"/>
                         <outlet property="labelUserNameErrMessage" destination="3hs-m6-mkD" id="xUi-Uq-7iY"/>
-                        <outlet property="password" destination="OE1-8t-RVZ" id="K0u-Ar-pQQ"/>
+                        <outlet property="passwordTextField" destination="OE1-8t-RVZ" id="8qg-fE-o1J"/>
+                        <outlet property="phoneNumberTextField" destination="hRh-4h-SIR" id="pWs-qH-KUk"/>
+                        <outlet property="userNameTextField" destination="zyi-VW-7nZ" id="19u-Yo-V4M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sux-M2-cx9" userLabel="First Responder" sceneMemberID="firstResponder"/>
